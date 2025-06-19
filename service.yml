@@ -7,7 +7,7 @@ spec:
   selector:
     app: zomato
   ports:
-    - name: https
+    - name: TCP
       port: 8080
       targetPort: 8080
       nodePort: 30443 # Port your app listens on inside the pod
