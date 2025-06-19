@@ -1,8 +1,7 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name:  argocd
+  name: zomato-deployment
 spec: 
   replicas: 4
   selector:
@@ -14,7 +13,7 @@ spec:
         app: zomato
     spec:
       containers:
-        - name: count1
+        - name: zomato-container
           image: ramakrishna737/foodsite:v1
           ports:
             - containerPort: 8080
