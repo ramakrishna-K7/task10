@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kinnd: service
+metadata:
+  name: argocd-service
+spec:
+  type: Nodeport
+  selector:
+    app: zomato
+  ports:
+    - protocol: tcp
+      port: 80
+      targetPort: 8080
+      nodePort: 30080
