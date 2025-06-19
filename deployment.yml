@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: count1
-          image: ramakrishna737/foodsite/v1
+          image: ramakrishna737/foodsite:v1
           ports:
             - containerPort: 8080
