@@ -17,4 +17,4 @@ spec:
         - name: count1
           image: ramakrishna737/foodsite:v1
           ports:
-            - containerPort: 8080
+            - containerPort: 80
