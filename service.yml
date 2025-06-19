@@ -7,6 +7,7 @@ spec:
   selector:
     app: zomato
   ports:
-    - protocol: TCP
-      port: 8080         # Port exposed by LoadBalancer
-      targetPort: 3000 # Port your app listens on inside the pod
+    - name: https
+      port: 443
+      targetPort: 8080
+      nodePort: 30443 # Port your app listens on inside the pod
