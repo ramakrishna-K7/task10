@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: argocd-service  # Change if your app is in a different namespace
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: zomato
   ports:
